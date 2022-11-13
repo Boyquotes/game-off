@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://y77aydgtjn86"]
+[gd_scene load_steps=2 format=3 uid="uid://701h4tov4aqo"]
 
-[node name="labyrinth" type="Node2D"]
+[ext_resource type="Script" path="res://Scenes/DFS-labyrinth.gd" id="1_cjvus"]
+
+[node name="labyrinth" type="TileMap"]
+format = 2
+script = ExtResource("1_cjvus")
