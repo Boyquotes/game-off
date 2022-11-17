@@ -1,7 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://701h4tov4aqo"]
+[gd_scene load_steps=5 format=3 uid="uid://701h4tov4aqo"]
 
+[ext_resource type="Texture2D" uid="uid://bekmgrp0u5bnf" path="res://Assets/0x72_DungeonTilesetII_v1.4.png" id="1_4apjx"]
 [ext_resource type="Script" path="res://Scenes/DFS-labyrinth.gd" id="1_cjvus"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d6r76"]
+texture = ExtResource("1_4apjx")
+1:1/0 = 0
+1:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2eebw"]
+sources/0 = SubResource("TileSetAtlasSource_d6r76")
+
 [node name="labyrinth" type="TileMap"]
+tile_set = SubResource("TileSet_2eebw")
 format = 2
 script = ExtResource("1_cjvus")
+map_W = 25
+map_H = 25
